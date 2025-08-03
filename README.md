@@ -3,7 +3,7 @@
 A simple Journal Application for my own edification. I learned:
 
 - Basics of React
-- Python & Flash
+- Python & Flask
 - Google OAuth Login
 - JWT Flow and Validation
 - Mongo DB
