@@ -23,26 +23,17 @@ function Home() {
   }, []);
 
   return (
-    <div>
-      <h1>Journal Entries</h1>
-      <Link to="/new" className="btn btn-primary mb-3">
-        New Entry
-      </Link>
-      <ul className="list-group">
-        {entries.map((entry) => (
-          <li key={entry._id} className="list-group-item">
-            <Link to={`/read/${entry._id}`} className="h5 text-decoration-none">
-              {entry.title}
-            </Link>
-            <p>{entry.body.substring(0, 100)}...</p>
-            <small>Created on: {entry.createdDate}</small>
-            <Link to={`/edit/${entry._id}`} className="btn btn-link">
-              Edit
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <section class="entries">
+      {entries.map((entry) => (
+        <article class="entry" key={entry._id}>
+          <Link to={`/read/${entry._id}`} className="h5 text-decoration-none">
+            <h3>{entry.title}</h3>
+          </Link>
+          <p>{entry.body.substring(0, 100)}...</p>
+          <span class="date">{entry.createdDate}</span>
+        </article>
+      ))}
+    </section>
   );
 }
 

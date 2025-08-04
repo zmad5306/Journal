@@ -7,6 +7,7 @@ import NewEntry from "./components/NewEntry";
 import ReadEntry from "./components/ReadEntry";
 import Login from "./components/Login";
 import Cookies from "js-cookie";
+import Header from "./components/Header";
 import LoginProcessing from "./components/LoginProcessing";
 import { ApiRoutes } from "./config";
 
@@ -39,14 +40,15 @@ function App() {
     <>
       {loggedIn && (
         <Router>
-          <div className="container mt-5">
+          <Header />
+          <main>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/edit/:id" element={<EditEntry />} />
               <Route path="/read/:id" element={<ReadEntry />} />
               <Route path="/new" element={<NewEntry />} />
             </Routes>
-          </div>
+          </main>
         </Router>
       )}
       {!loggedIn && !loggingIn && (

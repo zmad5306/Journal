@@ -1,0 +1,133 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+main {
+  background: #2a1b3d;
+  color: #f0eaff;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(90deg, #3b2066, #6d28d9);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+  color: #f0eaff;
+}
+
+.new-entry-btn {
+  background: #a78bfa;
+  color: #2a1b3d;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.new-entry-btn:hover {
+  background: #c4b5fd;
+}
+
+/* Journal Form */
+.journal-form {
+  background: #3b2066;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.journal-form input,
+.journal-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.6rem 0;
+  border: none;
+  border-radius: 8px;
+  background: #5b21b6;
+  color: #f0eaff;
+  font-size: 1rem;
+}
+
+.journal-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.save-btn {
+  background: #a78bfa;
+  color: #2a1b3d;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.cancel-btn {
+  background: #6b21a8;
+  color: #f0eaff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Entries */
+.entries {
+  padding: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.entry {
+  background: #4c1d95;
+  padding: 1.2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+.entry:hover {
+  transform: translateY(-5px);
+  background: #5b21b6;
+}
+
+.entry h3 {
+  color: #e9d5ff;
+  margin-bottom: 0.5rem;
+}
+
+.entry p {
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
