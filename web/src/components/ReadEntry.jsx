@@ -25,14 +25,13 @@ function ReadEntry() {
   }, [id, navigate]);
 
   return (
-    <div>
-      <h1>Journal Entry</h1>
+    <section class="entries">
       {initialEntry ? (
         <EntryDisplay initialEntry={initialEntry} />
       ) : (
         <p>Loading...</p>
       )}
-    </div>
+    </section>
   );
 }
 

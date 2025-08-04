@@ -131,3 +131,40 @@ header h1 {
   font-size: 0.8rem;
   opacity: 0.8;
 }
+
+.entry-detail {
+  background: #4c1d95;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 2rem auto;
+  color: #f0eaff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.entry-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #e9d5ff;
+}
+
+.entry-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #c4b5fd;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 2rem;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function EntryForm({ initialEntry = { title: "", body: "" } }) {
   const [entry, setEntry] = useState(initialEntry);
@@ -10,14 +11,12 @@ function EntryForm({ initialEntry = { title: "", body: "" } }) {
   };
 
   return (
-    <div>
-      <div className="mb-3">
-        <h3>{entry.title}</h3>
-        <p>{entry.body}</p>
-      </div>
-      <button className="btn btn-secondary" onClick={handleCancel}>
-        Back
-      </button>
+    <div className="entry-detail">
+      <h2 className="entry-title">{entry.title}</h2>
+      <p className="entry-content">{entry.body}</p>
+      <Link to="/" className="back-link">
+        ← Back to Journal
+      </Link>
     </div>
   );
 }
