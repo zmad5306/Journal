@@ -47,7 +47,6 @@ function EditEntry() {
 
   return (
     <div>
-      <h1>Edit Journal Entry</h1>
       {initialEntry ? (
         <EntryForm initialEntry={initialEntry} onSave={handleSave} />
       ) : (

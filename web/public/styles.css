@@ -168,3 +168,31 @@ header h1 {
 section {
   padding: 2rem;
 }
+
+.entry-actions {
+  margin-top: 0.5rem;
+}
+
+.entry-actions .btn-link {
+  color: #c4b5fd;
+  font-weight: bold;
+  padding: 0;
+}
+
+.entry-actions .btn-link:hover {
+  text-decoration: underline;
+}
+
+.new-entry-page {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #3b2066;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.new-entry-page h2 {
+  color: #e9d5ff;
+  margin-bottom: 1rem;
+}

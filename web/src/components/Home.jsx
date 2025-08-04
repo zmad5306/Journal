@@ -23,14 +23,20 @@ function Home() {
   }, []);
 
   return (
-    <section class="entries">
+    <section className="entries">
       {entries.map((entry) => (
-        <article class="entry" key={entry._id}>
+        <article className="entry" key={entry._id}>
           <Link to={`/read/${entry._id}`} className="h5 text-decoration-none">
             <h3>{entry.title}</h3>
           </Link>
           <p>{entry.body.substring(0, 100)}...</p>
-          <span class="date">{entry.createdDate}</span>
+          <span className="date">{entry.createdDate}</span>
+
+          <div className="entry-actions">
+            <Link to={`/edit/${entry._id}`} className="btn btn-link">
+              Edit
+            </Link>
+          </div>
         </article>
       ))}
     </section>
